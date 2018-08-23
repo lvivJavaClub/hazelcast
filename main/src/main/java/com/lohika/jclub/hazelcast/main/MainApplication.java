@@ -20,7 +20,7 @@ public class MainApplication {
     config.setProperty("hazelcast.rest.enabled", "true");
 
     config.getManagementCenterConfig().setEnabled(true);
-    config.getManagementCenterConfig().setUrl("http://localhost:8080/hazelcast-mancenter");
+    config.getManagementCenterConfig().setUrl("http://127.0.0.1:8080/hazelcast-mancenter");
 
     HazelcastInstance hazelcastInstance = Hazelcast.newHazelcastInstance(config);
   }
